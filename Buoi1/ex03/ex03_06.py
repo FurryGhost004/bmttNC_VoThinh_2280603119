@@ -7,6 +7,7 @@ def xoaphantu(dictionary, key):
 
 mydict = {'a': 1,'b': 2,'c': 3,'d': 4,}
 keytodelete= 'b'
+result = xoaphantu(mydict,keytodelete)
 if result:
     print("Phần tử này đã được xoá từ Dictionary:", mydict)
 else:
