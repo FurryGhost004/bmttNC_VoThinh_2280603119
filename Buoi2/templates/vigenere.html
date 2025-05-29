@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <title>Mật mã Vigenère</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    body {
+      background-color: #f5f7fa;
+      padding-top: 40px;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+    }
+    .container {
+      max-width: 900px;
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    }
+    h2 {
+      font-weight: 700;
+      text-align: center;
+      margin-bottom: 40px;
+      color: #007bff;
+    }
+    label {
+      font-weight: 600;
+    }
+    button {
+      width: 100%;
+    }
+    @media(max-width: 767px) {
+      .form-column {
+        margin-bottom: 30px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h2>VIGENERE CIPHER</h2>
+    <div class="row">
+      <!-- ENCRYPTION -->
+      <div class="col-md-6 form-column">
+        <h4 class="text-primary mb-4">Mã hóa (Encryption)</h4>
+        <form method="POST" action="/vigenere/encrypt">
+          <div class="form-group">
+            <label for="inputPlainText">Văn bản gốc:</label>
+            <input type="text" id="inputPlainText" name="inputPlainText" class="form-control" placeholder="Nhập văn bản gốc" required autofocus />
+          </div>
+          <div class="form-group">
+            <label for="inputKeyPlain">Khóa (chuỗi chữ):</label>
+            <input type="text" id="inputKeyPlain" name="inputKeyPlain" class="form-control" placeholder="Nhập khóa" required />
+          </div>
+          <button type="submit" class="btn btn-primary mt-3">Mã hóa</button>
+        </form>
+      </div>
+
+      <!-- DECRYPTION -->
+      <div class="col-md-6 form-column">
+        <h4 class="text-success mb-4">Giải mã (Decryption)</h4>
+        <form method="POST" action="/vigenere/decrypt">
+          <div class="form-group">
+            <label for="inputCipherText">Văn bản mã hóa:</label>
+            <input type="text" id="inputCipherText" name="inputCipherText" class="form-control" placeholder="Nhập văn bản mã hóa" required />
+          </div>
+          <div class="form-group">
+            <label for="inputKeyCipher">Khóa (chuỗi chữ):</label>
+            <input type="text" id="inputKeyCipher" name="inputKeyCipher" class="form-control" placeholder="Nhập khóa" required />
+          </div>
+          <button type="submit" class="btn btn-success mt-3">Giải mã</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

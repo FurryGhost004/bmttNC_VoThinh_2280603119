@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <title>Thực hành An toàn thông tin nâng cao</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    body {
+      background-color: #f5f7fa;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    .header-img {
+      max-width: 180px;
+      margin: 30px auto 10px auto;
+      display: block;
+    }
+    h4.title {
+      font-weight: 700;
+      text-align: center;
+      margin-bottom: 40px;
+      color: #212529;
+    }
+    .card-link {
+      text-decoration: none;
+      color: inherit;
+      transition: all 0.3s ease;
+    }
+    .card-link:hover {
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+      transform: translateY(-5px);
+      text-decoration: none;
+      color: #007bff;
+    }
+    footer {
+      margin-top: auto;
+      padding: 15px 0;
+      background-color: #343a40;
+      color: white;
+      text-align: center;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+  <img
+    src="https://filel.hutech.edu.vn/file/editor/homepage/stories/hinh34/logo%20CMYK-01.png"
+    alt="hutech"
+    class="header-img"
+  />
+
+  <h4 class="title">BÀI THỰC HÀNH BẢO MẬT THÔNG TIN NÂNG CAO</h4>
+
+  <div class="container">
+    <div class="row">
+
+      <div class="col-md-4 col-sm-6 mb-4">
+        <a href="/caesar" class="card-link">
+          <div class="card shadow-sm h-100">
+            <div class="card-body text-center">
+              <h5 class="card-title">Caesar Cipher</h5>
+              <p class="card-text">Mã hóa và giải mã Caesar đơn giản.</p>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="col-md-4 col-sm-6 mb-4">
+        <a href="/playfair" class="card-link">
+          <div class="card shadow-sm h-100">
+            <div class="card-body text-center">
+              <h5 class="card-title">Playfair</h5>
+              <p class="card-text">Mã hóa và giải mã Playfair Cipher.</p>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="col-md-4 col-sm-6 mb-4">
+        <a href="/vigenere" class="card-link">
+          <div class="card shadow-sm h-100">
+            <div class="card-body text-center">
+              <h5 class="card-title">Vigenere</h5>
+              <p class="card-text">Mã hóa và giải mã Vigenère Cipher.</p>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="col-md-4 col-sm-6 mb-4">
+        <a href="/transposition" class="card-link">
+          <div class="card shadow-sm h-100">
+            <div class="card-body text-center">
+              <h5 class="card-title">Transposition</h5>
+              <p class="card-text">Mã hóa và giải mã Transposition Cipher.</p>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="col-md-4 col-sm-6 mb-4">
+        <a href="/railfence" class="card-link">
+          <div class="card shadow-sm h-100">
+            <div class="card-body text-center">
+              <h5 class="card-title">Rail Fence</h5>
+              <p class="card-text">Mã hóa và giải mã Rail Fence Cipher.</p>
+            </div>
+          </div>
+        </a>
+      </div>
+
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 HUTECH - Thực hành Bảo mật Thông tin Nâng cao
+  </footer>
+
+</body>
+</html>
